@@ -1,4 +1,4 @@
-from models import create_tables, User, MissingPerson, Found, db
+from models import create_tables, db
 
 if db.is_closed():
     db.connect() 
