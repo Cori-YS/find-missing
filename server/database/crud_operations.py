@@ -1,5 +1,4 @@
 from database.models import User, MissingPerson, Found, db
-import datetime
 
 # Create functions
 def create_user(email, password, username, admin=False):
