@@ -2471,3 +2471,55 @@
 2024-06-23 21:10:33,683 - LA32FASDF43
 2024-06-23 21:10:34,010 - Know Face Detected
 2024-06-23 21:10:34,010 - LA32FASDF43
+2024-06-23 21:52:59,096 - Iniciando script com argumentos: /dev/video0, show
+2024-06-23 21:52:59,096 - Script rodando para /dev/video0, show...
+2024-06-23 21:53:03,635 - Encode File Loaded
+2024-06-23 21:53:03,635 - Encode File Loaded
+2024-06-23 21:54:00,851 - Know Face Detected
+2024-06-23 21:54:00,851 - LA32FASDF43
+2024-06-23 21:54:00,854 - Ocorreu um erro: 404 Client Error: NOT FOUND for url: http://127.0.0.1:5000/static/images/LA32FASDF43.jpg
+2024-06-23 21:54:18,240 - Iniciando script com argumentos: /dev/video0, show
+2024-06-23 21:54:18,240 - Script rodando para /dev/video0, show...
+2024-06-23 21:54:18,387 - Encode File Loaded
+2024-06-23 21:54:18,387 - Encode File Loaded
+2024-06-23 21:54:23,674 - Know Face Detected
+2024-06-23 21:54:23,674 - LA32FASDF43
+2024-06-23 21:54:23,676 - Ocorreu um erro: 404 Client Error: NOT FOUND for url: http://127.0.0.1:5000/static/images/LA32FASDF43.jpg
+2024-06-23 21:56:15,279 - Iniciando script com argumentos: /dev/video0, show
+2024-06-23 21:56:15,280 - Script rodando para /dev/video0, show...
+2024-06-23 21:56:15,398 - Encode File Loaded
+2024-06-23 21:56:15,398 - Encode File Loaded
+2024-06-23 21:56:22,351 - Know Face Detected
+2024-06-23 21:56:22,352 - a
+2024-06-23 21:56:22,401 - Encode File Loaded
+2024-06-23 21:56:22,401 - Encode File Loaded
+2024-06-23 21:56:22,746 - Know Face Detected
+2024-06-23 21:56:22,746 - a
+2024-06-23 21:56:23,083 - Know Face Detected
+2024-06-23 21:56:23,083 - a
+2024-06-23 21:56:23,433 - Know Face Detected
+2024-06-23 21:56:23,433 - a
+2024-06-23 21:56:23,760 - Know Face Detected
+2024-06-23 21:56:23,760 - a
+2024-06-23 21:56:24,186 - Know Face Detected
+2024-06-23 21:56:24,187 - a
+2024-06-23 21:56:26,202 - Know Face Detected
+2024-06-23 21:56:26,202 - a
+2024-06-23 21:56:26,522 - Know Face Detected
+2024-06-23 21:56:26,522 - a
+2024-06-23 21:56:26,834 - Know Face Detected
+2024-06-23 21:56:26,834 - a
+2024-06-23 21:56:27,149 - Know Face Detected
+2024-06-23 21:56:27,149 - a
+2024-06-23 21:56:27,530 - Know Face Detected
+2024-06-23 21:56:27,531 - a
+2024-06-23 21:56:27,844 - Know Face Detected
+2024-06-23 21:56:27,844 - a
+2024-06-23 21:56:28,159 - Know Face Detected
+2024-06-23 21:56:28,159 - a
+2024-06-23 21:56:28,477 - Know Face Detected
+2024-06-23 21:56:28,477 - a
+2024-06-23 21:56:28,796 - Know Face Detected
+2024-06-23 21:56:28,796 - a
+2024-06-23 21:56:29,127 - Know Face Detected
+2024-06-23 21:56:29,127 - a

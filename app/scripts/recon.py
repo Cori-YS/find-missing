@@ -2,7 +2,6 @@ import sys
 import time
 import logging
 import io
-import os
 import cv2
 import pickle
 import face_recognition
@@ -41,6 +40,7 @@ def main(camera, show=None):
 
         # Dictionary to keep track of the last seen time for each face
         last_seen = {}
+        last_time = 0
 
         # Time interval in seconds (5 minutes = 300 seconds)
         time_interval = 300
@@ -82,6 +82,27 @@ def main(camera, show=None):
                 else:
                     send_recognition_to_server(personIds[matchIndex], location="Morro Bento", camera=camera)
                 last_seen[personIds[matchIndex]] = current_time
+
+                elapsed_time = current_time - last_time
+                if elapsed_time > time_interval:
+                    last_time = current_time
+                    # URL of the pickle file
+                    url = 'http://127.0.0.1:5000/static/encodes'
+
+                    # Download the pickle file from URL
+                    response = requests.get(url)
+
+                    if response.status_code == 200:
+                        # Load pickle file from the response content
+                        encondeListKnownWithIds = pickle.load(io.BytesIO(response.content))
+                        encodeListKnown, personIds = encondeListKnownWithIds
+                        logging.info("Encode File Loaded")
+                    else:
+                        logging.info(f"Failed to fetch the encodes file from URL. Status code: {response.status_code}")
+                    logging.info("Encode File Loaded")
+
+                    if last_time == 0:
+                        last_time = current_time
 
             imgBackground[162:162+480, 55:55+640] = img
 
