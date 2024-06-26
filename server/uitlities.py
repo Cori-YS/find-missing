@@ -67,3 +67,15 @@ def encodeIMGs():
         pickle.dump(encodeListKnowWithIds, file)
 
     print('File Saved')
+
+def delete_image(image_path):
+    # Check if the image file exists
+    if os.path.exists(image_path):
+        try:
+            # Delete the image file
+            os.remove(image_path)
+            print(f"Image {image_path} deleted successfully.")
+        except Exception as e:
+            print(f"Error deleting the image: {e}")
+    else:
+        print("The image does not exist at the specified path.")    

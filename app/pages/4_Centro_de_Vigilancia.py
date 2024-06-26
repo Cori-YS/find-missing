@@ -24,14 +24,15 @@ file_path = 'app/resources/files/cameras.txt'
 
 if not os.path.exists(file_path):
     c = list_available_cameras()
+    c.append('http://192.168.1.153:8080/video')
     with open(file_path, 'a') as f:
-        [f.write(camera) for camera in c]
+        [f.write(camera + '\n') for camera in c]
 
 # Lista de argumentos para os scripts
-#cameras = list_available_cameras()
 cameras_file = open(file_path, 'r')
 
 for camera in cameras_file:
+    camera = camera.strip()
     container = st.container(border=True)
     show_cam = False
     status = is_process_running(camera)

@@ -1,7 +1,7 @@
 import os
 from flask import Blueprint, request, jsonify
-from database.crud_operations import list_missing_persons, update_missing_person, create_missing_person
-from uitlities import auth, encodeIMGs
+from database.crud_operations import list_missing_persons, update_missing_person, create_missing_person, get_missing_person_by_id
+from uitlities import auth, encodeIMGs, delete_image
 
 missing_routes = Blueprint('missing_routes', __name__)
 
@@ -30,7 +30,10 @@ def solved():
     return jsonify({'token': 0}), 400
   try:
     id = data['person_id']
-    update_missing_person(person_id=id, solved=True)
+    person = get_missing_person_by_id(id)
+    delete_image('server/'+person.image_path)
+    update_missing_person(person_id=id, solved=True, image_path='')
+    encodeIMGs()
     return jsonify({"message": "Operação sucedeu."})
   except:
     return jsonify({"message": "Operação falhou."}), 400
