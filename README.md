@@ -1,13 +1,5 @@
 # Predição de Custos Médicos
 
-## Membros do Grupo
-
-- ISMÉLIO CORI
-- ALBERTO CARDOSO
-- ALDAIR LUENDA
-- MANUEL NGOMBO
-- PEDRO GONÇALVES
-
 ## Descrição do Projeto
 
 Este projeto tem como objetivo desenvolver uma plataforma para ajudar na busca por pessoas desaparecidas usando sistemas de reconhecimento facial
